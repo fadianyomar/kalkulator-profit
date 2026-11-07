@@ -1,0 +1,15 @@
+*{box-sizing:border-box}:root{color-scheme:dark;--bg:#0b1120;--muted:#9ca3af;--green:#34d399;--red:#fb7185}
+body{margin:0;background:radial-gradient(ellipse at 80% 0%,#17332f 0,transparent 40%),var(--bg);color:#f3f4f6;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.app{width:min(100% - 32px,520px);margin:auto;padding:28px 0 40px}
+header{display:flex;align-items:center;gap:13px;margin-bottom:24px}.logo{width:44px;height:44px;border-radius:13px;background:#153b32;color:var(--green);display:grid;place-items:center;font-size:27px}h1{font-size:20px;margin:0}
+label{display:block;font-size:13px;font-weight:650;margin-bottom:8px}.tax-choice{margin-bottom:16px}
+.tax-choice select{width:100%;padding:13px;background:#0d1626;border:1px solid #354259;border-radius:12px;color:white;font:inherit;font-size:16px}
+.panel{background:linear-gradient(145deg,#19263b,#131d2e);border:1px solid #2b394f;border-radius:19px;padding:18px;margin:14px 0}
+.heading{display:flex;gap:11px;align-items:center;margin-bottom:17px}.heading b{background:#203b39;color:var(--green);padding:9px 11px;border-radius:10px;font-size:12px}.heading h3{margin:0;font-size:16px}
+input{width:100%;padding:14px;background:#0d1626;border:1px solid #354259;border-radius:12px;color:white;font:inherit;font-size:17px;outline:none}input:focus,.tax-choice select:focus{border-color:var(--green)}input::placeholder{color:#68758a}
+.row{display:flex;justify-content:space-between;gap:10px;margin-top:13px;color:var(--muted);font-size:13px}.row strong{color:#f3f4f6;text-align:right}.total{border-top:1px solid #303c50;padding-top:13px}
+.qty{margin:18px 0}.qty input{max-width:150px}.result{background:linear-gradient(145deg,#102c27,#10231f);border:1px solid #245344;border-radius:20px;padding:20px;margin-top:18px}
+.result>small,.grand small{font-size:10px;letter-spacing:1px;font-weight:800;color:#a7b8b1}.big{display:block;font-size:30px;color:var(--green);margin:9px 0 5px;overflow-wrap:anywhere}
+.status{font-size:12px;color:var(--green);letter-spacing:1px}.status.loss{color:var(--red)}.status.neutral{color:#aab4c1}
+hr{border:0;border-top:1px solid #2c4941;margin:18px 0}.grand{border-top:1px solid #2c4941;margin-top:18px;padding-top:16px}.grand strong{display:block;font-size:27px;color:var(--green);margin-top:8px;overflow-wrap:anywhere}
+button{width:100%;padding:14px;border-radius:13px;border:1px solid #344258;background:#202c40;color:white;font:inherit;font-weight:700;margin-top:17px}

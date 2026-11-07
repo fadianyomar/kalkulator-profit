@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1120"><meta name="description" content="Kalkulator Profit">
+<title>Kalkulator Profit</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css">
+</head><body><main class="app">
+<header><div class="logo">▦</div><h1>Kalkulator Profit</h1></header>
+<section class="tax-choice"><label for="taxRate">Pilihan pajak</label><select id="taxRate"><option value="0.09">9%</option><option value="0.10" selected>10%</option></select></section>
+<section class="panel"><div class="heading"><b>01</b><h3>Harga beli</h3></div>
+<label for="buy">Harga beli (Rp)</label><input id="buy" type="number" min="0" inputmode="decimal" placeholder="Masukkan harga beli">
+<div class="row"><span>Pajak beli</span><strong id="buyTax">—</strong></div><div class="row total"><span>Harga beli + pajak</span><strong id="buyTotal">—</strong></div></section>
+<section class="panel"><div class="heading"><b>02</b><h3>Harga jual</h3></div>
+<label for="sell">Harga jual (Rp)</label><input id="sell" type="number" min="0" inputmode="decimal" placeholder="Masukkan harga jual">
+<div class="row"><span>Pajak jual</span><strong id="sellTax">—</strong></div><div class="row total"><span>Harga jual - pajak</span><strong id="sellTotal">—</strong></div></section>
+<section class="qty"><label for="qty">Jumlah barang</label><input id="qty" type="number" min="0" step="1" inputmode="numeric" value="1"></section>
+<section class="result"><small>PROFIT / KERUGIAN PER BARANG</small><strong class="big" id="per">Rp 0</strong><b id="status" class="status">Masukkan harga</b><hr>
+<div class="row"><span>Total modal</span><strong id="cost">—</strong></div><div class="row"><span>Total penjualan</span><strong id="revenue">—</strong></div>
+<div class="grand"><small>TOTAL PROFIT / KERUGIAN</small><strong id="total">—</strong></div><div class="row"><span>Margin terhadap modal</span><strong id="margin">—</strong></div></section>
+<button id="reset">↺ &nbsp; Reset</button></main><script src="app.js"></script></body></html>
